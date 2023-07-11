@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>", initial-scale=1.0">
+    <title>Employee Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+    h2{
+
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    label{
+
+        font-family: 'Poppins', sans-serif;
+        color: darksalmon;
+
+    }
+
+    #detailButton{
+
+        font-family: 'Poppins', sans-serif; 
+
+        border-radius: 10px;
+
+    }
+    #resetButton{
+        font-family: 'Poppins', sans-serif; 
+
+        border-radius: 10px;
+    }
+
+    input[type="text"]{
+
+        width: 200px;
+
+        border-radius: 10px;
+
+        padding: 7px;
+
+        color: darksalmon;
+    
+        font-weight: bolder;
+
+        font-size: large;
+
+        text-transform: uppercase;
+
+        font-family: 'Poppins', sans-serif; 
+
+    }
+</style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Full Name</label></td>
+                <td><input type="text" required autofocus maxlength="40"></td>
+            </tr>
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type="email" required placeholder="Ex. abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>Contact Number</label></td>
+                <td><input type="tel"></td>
+            </tr>
+            <tr>
+                <td><label>Profile Photo</label></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                        <input type="radio" name="Gender" ><label>Male</label>
+                        <input type="radio" name="Gender" ><label>Female</label>
+                        <input type="radio" name="Gender" ><label>Transgender</label>
+                
+                </td>
+            </tr>
+            <tr>
+                <td><label>Marital Status</label></td>
+                <td>
+                    <input type="radio" name="Marital"><label>Yes</label>
+                        <input type="radio" name="Marital"><label>No</label>
+                 
+                </td>
+            </tr>
+
+             <tr>
+                <td><label>Known Tools and Technologies</label></td>
+                <td>
+                    
+                        <input type="checkbox"><label>Angular</label>
+                    <input type="checkbox"><label>React</label>
+                    <input type="checkbox"><label>Python</label>
+                    <input type="checkbox"><label>Java</label>
+                    <input type="checkbox"><label>Jenkin</label>
+                    <input type="checkbox"><label>GIT</label>
+                    <input type="checkbox"><label>Database</label>
+
+                </td>
+             </tr>
+             <tr>
+                <td><label>Designation</label></td>
+                <td>
+                    <select>
+                        <option value="UI Developer">UI Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Full stack Developer">Full stack Developer</option>
+                        <option value="Devops Engineer">Devops Engineer</option>
+                        <option value="Tester">Tester</option>
+                    </select>
+                </td>
+             </tr>
+
+
+            <tr>
+                <td><label>Country</label></td>
+                <td><input value="India" readonly></td>
+            </tr>
+            <tr>
+                <td><label>Present Address</label></td>
+                <td><textarea rows="7"></textarea></td>
+            </tr>
+            <tr>
+               <td><button type="submit" id="detailButton">Submit Details</button></td> 
+               
+               <td><button type="reset" id="resetButton">Clear</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
